@@ -1,0 +1,115 @@
+
+body {
+    background: linear-gradient(135deg, #232526 0%, #1a1a2e 100%);
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: #232526;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.nav-link.text-danger:hover {
+    color: #ff007a !important;
+    text-shadow: 0 0 8px #ff007a;
+}
+
+.modal .btn {
+    background: linear-gradient(90deg, #00fff7 0%, #00ff85 50%, #ff007a 100%);
+    color: #232526;
+    border: 2px solid #00fff7;
+    box-shadow: 0 0 12px #00fff7, 0 0 2px #ff007a;
+    font-weight: bold;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.modal .btn:hover {
+    background: linear-gradient(90deg, #ff007a 0%, #00ff85 50%, #00fff7 100%);
+    color: #fff;
+    box-shadow: 0 0 24px #ff007a, 0 0 12px #00fff7;
+    transform: scale(1.08);
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px #00fff7cc, 0 0 24px #ff007a99;
+}
+
+.btn {
+    font-weight: bold;
+    border-radius: 2rem;
+    box-shadow: 0 0 8px #00fff7, 0 0 2px #ff007a;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.btn-primary {
+    background: linear-gradient(90deg, #00fff7 0%, #00e1ff 100%);
+    color: #232526;
+    border: none;
+}
+.btn-success {
+    background: linear-gradient(90deg, #00ff85 0%, #00e1ff 100%);
+    color: #232526;
+    border: none;
+}
+.btn-warning {
+    background: linear-gradient(90deg, #ffe600 0%, #ff007a 100%);
+    color: #232526;
+    border: none;
+}
+.btn-danger {
+    background: linear-gradient(90deg, #ff007a 0%, #a020f0 100%);
+    color: #fff;
+    border: none;
+}
+.btn-outline-primary, .btn-outline-success, .btn-outline-warning, .btn-outline-danger {
+    border: 2px solid #00fff7;
+    color: #00fff7;
+    background: transparent;
+}
+.btn:hover {
+    box-shadow: 0 0 24px #00fff7, 0 0 12px #ff007a;
+    transform: scale(1.05);
+}
+
+input, textarea, select {
+    background: #232526;
+    color: #fff;
+    border: 1px solid #00fff7;
+    border-radius: 0.5rem;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+input:focus, textarea:focus, select:focus {
+    border-color: #ff007a;
+    box-shadow: 0 0 8px #ff007a;
+}
+
+footer {
+    background: #232526;
+    color: #00fff7;
+    box-shadow: 0 -2px 8px #00fff7a0;
+    font-size: 1.1rem;
+}
+
+/* Neon glow animation */
+@keyframes neon-glow {
+    0%, 100% { text-shadow: 0 0 8px #00fff7, 0 0 16px #ff007a; }
+    50% { text-shadow: 0 0 24px #00fff7, 0 0 32px #ff007a; }
+}
+.neon {
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+/* Fade-in motion */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
